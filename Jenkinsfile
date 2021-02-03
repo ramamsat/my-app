@@ -36,7 +36,7 @@ node{
 	}
       }
    stage('Docker deployment'){
-   sh 'docker run -d -p 8090:8080 --name tomcattest ramamsat2/myweb:0.0.2' 
+   sh 'docker run -d -p 8090:8080 --name tomcatest ramamsat2/myweb:0.0.2' 
    }
 }
 
