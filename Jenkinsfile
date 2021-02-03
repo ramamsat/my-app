@@ -24,9 +24,9 @@ node{
    sh 'docker push ramamsat2/myweb:0.0.2'
    }
    stage('Nexus Image Push'){
-   sh "docker login -u admin -p admin1234 13.234.29.215:8083"
-   sh "docker tag ramamsat2/myweb:0.0.2 13.234.29.215:8083/sat:1.0.0"
-   sh 'docker push 13.234.29.215:8083/sat:1.0.0'
+   sh "docker login -u admin -p admin1234 13.233.122.135:8083"
+   sh "docker tag ramamsat2/myweb:0.0.2 13.233.122.135:8083/sat:1.0.0"
+   sh 'docker push 13.233.122.135:8083/sat:1.0.0'
    }
    stage('Remove Previous Container'){
 	try{
